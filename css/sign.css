@@ -1,0 +1,35 @@
+html,body{
+    height:100%;
+}
+
+ul{
+    padding:0;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    font-size: xx-large;
+}
+
+a{
+    color:#ffffff;
+    padding-right: 15px;
+}
+.act{
+    text-decoration:underline;
+    text-decoration-color: #428bca;
+}
+nav:hover a{
+    text-decoration:none;
+}
+
+nav li a:hover {
+    text-decoration:underline;
+    color:#ffffff;
+    text-decoration-color: #428bca
+}
+
+nav li a:active{
+    opacity: .5;
+}

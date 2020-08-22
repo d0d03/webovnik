@@ -1,0 +1,21 @@
+section{
+    font-size: xx-large;
+}
+
+a{
+    margin: 50px 50px 5px 50px;
+    color: white;
+    -moz-box-sizing: border-box;
+    background-color: #428bca;
+    width: 300px;
+    height: 100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+a:hover{
+    text-decoration: none;
+}
