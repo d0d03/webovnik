@@ -17,6 +17,9 @@
             header("Location: ../home.php?currentDay=$date");
             exit();
         }
+    }else{
+        header("Location: ../error.php");
+        exit();
     }
 
 

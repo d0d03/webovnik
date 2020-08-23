@@ -36,6 +36,7 @@ if(isset($_POST['delete'])) {
         }
     }
 }else{
-    echo "error! you shouldn't be here";
+    header("Location: ../error.php");
+    exit();
 }
 

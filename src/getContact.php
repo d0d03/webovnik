@@ -21,4 +21,7 @@
         }else{
             echo "<p style='padding: 5px;color:red'>You have no contacts!</p>";
         }
+    }else{
+        header("Location: ../error.php");
+        exit();
     }

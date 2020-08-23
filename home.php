@@ -1,11 +1,13 @@
 <?php
     include_once './src/connect.php';
     session_start();
-    date_default_timezone_set('Europe/Zagreb');
 
     if(!isset($_SESSION['uname'])){
         header("Location: ./error.php");
     }
+
+    date_default_timezone_set('Europe/Zagreb');
+
     if(isset($_GET['ym'])){
         $ym = $_GET['ym'];
     }else{

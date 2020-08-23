@@ -43,5 +43,6 @@
         }
     }else{
         header("Location: ../login.php?signin=error");
+        exit();
     }
 

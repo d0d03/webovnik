@@ -19,5 +19,8 @@
         $dayEvents .= "</table>";
 
         echo $dayEvents;
+    }else{
+        header("Location: ../error.php");
+        exit();
     }
 

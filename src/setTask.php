@@ -16,4 +16,7 @@
             header("Location: ../home.php");
             exit();
         }
+    }else{
+        header("Location: ../error.php");
+        exit();
     }

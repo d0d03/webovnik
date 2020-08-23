@@ -34,5 +34,6 @@
             }
         }
     }else{
-        echo "error! you shouldn't be here";
+        header("Location: ../error.php");
+        exit();
     }

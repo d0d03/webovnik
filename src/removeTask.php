@@ -12,4 +12,7 @@ if(isset($_POST['submit'])){
         header("Location: ../home.php?currentDay=$currentDay");
         exit();
     }
+}else{
+    header("Location: ../error.php");
+    exit();
 }

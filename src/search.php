@@ -19,4 +19,7 @@
         }else{
             echo "There are no results matching your search!";
         }
+    }else{
+        header("Location: ../error.php");
+        exit();
     }

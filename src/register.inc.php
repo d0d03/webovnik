@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_POST['submit'])){
-        include_once "connect.php";
+        include_once "./connect.php";
         $uid =  mysqli_real_escape_string($conn, $_POST['uname']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
         $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);

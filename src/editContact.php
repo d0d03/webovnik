@@ -23,5 +23,8 @@
             header("Location: ../phone.php?cID=$cID&uid={$_SESSION['uname']}");
             exit();
         }
+    }else{
+        header("Location: ../error.php");
+        exit();
     }
 

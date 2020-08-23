@@ -13,4 +13,7 @@
             header("Location: ../phone.php");
             exit();
         }
+    }else{
+        header("Location: ../error.php");
+        exit();
     }
