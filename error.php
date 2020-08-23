@@ -13,7 +13,7 @@
 <body class="jumbotron text-center" style="font-size: xx-large">
     <h1>Hmm.</h1>
     <p>Looks like you made a wrong turn,<br/>lets get you back on track!</p>
-    <a href="index.html" style="display: inline-flex;" >HOME</a>
+    <a href="index.php" style="display: inline-flex;" >HOME</a>
 <main class="container">
 </main>
 </body>

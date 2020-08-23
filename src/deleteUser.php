@@ -29,7 +29,7 @@ if(isset($_POST['delete'])) {
                     mysqli_query($conn,$sqlDeleteContacts);
                     $sqlDeleteAcc="DELETE FROM users WHERE username = '$uid';  ";
                     mysqli_query($conn,$sqlDeleteAcc);
-                    header("Location: ../index.html?deleted=success");
+                    header("Location: ../index.php?deleted=success");
                     exit();
                 }
             }
