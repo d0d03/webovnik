@@ -4,7 +4,7 @@
         include_once './connect.php';
         $contact ='';
         $search = mysqli_real_escape_string($conn,$_GET['search']);
-        $sql = "SELECT * FROM contacts WHERE cName LIKE '%$search%' OR cPhone LIKE '%$search%' AND userID ='{$_SESSION['uname']}'";
+        $sql = "SELECT * FROM contacts WHERE userID ='{$_SESSION['uname']}' AND (cName LIKE '%$search%' OR cPhone LIKE '%$search%')";
         $result = mysqli_query($conn,$sql);
         $queryResult = mysqli_num_rows($result);
         if($queryResult>0){
