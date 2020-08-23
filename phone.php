@@ -47,6 +47,7 @@
                             <span class="dropdown-item-text"><?=$_SESSION['email']?></span>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="settings.php">Settings</a>
+                            <form action="src/logout.inc.php" method="POST"><button type="submit" name="submit" class="dropdown-item">Log out</button></form>
                         </div>
                     </div>
                 </li>
@@ -54,7 +55,7 @@
         </div>
     </nav>
 
-    <main class="container" style="margin-top:30px">
+    <main class="container" style="margin-top:30px;margin-bottom: 0">
         <div class="container">
             <section class="card bg-primary text-white">
                 <div class="card-body clearfix">
@@ -194,13 +195,5 @@
             </table>
         </div>
     </main>
-
-    <footer class="jumbotron text-center" style="margin-bottom:0">
-        <?php
-        if(isset($_SESSION['uname'])){
-            echo '<form action="src/logout.inc.php" method="POST"><button type="submit" name="submit" class="btn btn-primary">LOG OUT</button></from>';
-        }
-        ?>
-    </footer>
 </body>
 </html>
